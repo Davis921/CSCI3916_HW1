@@ -13,7 +13,6 @@ app.post('/', (req, res) => {
     }
     
     const responseBody = {
-        acceptHeader: acceptHeader,
         ...req.body
     }
 
