@@ -17,10 +17,10 @@ describe('POST /', () => {
             .send(sampleBody)
             .end((err, response) => {
                 expect(err).to.be.null;
-                expect(response).to.have.status(200)
+                expect(response).to.have.status(200);
                 expect(response).to.be.json;
-                expect(response.body).to.have.property('message', 'Hello, World!')
-
+                expect(response.body).to.have.property('message', 'Hello, World!');
+                done();
             });
         
     });
